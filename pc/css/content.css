@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* ---------------------------- 메인 영역 ---------------------------- */
+
+/* 비주얼 영역 */
+#mainVisual{position:relative;}
+#mainVisual article{background-size:cover !important;}
+#mainVisual .visu01{background:url('../images/main/main_visual_01.jpg') no-repeat center top;}
+#mainVisual .main-visual-item{height: 1080px;}
+
+
+.visu_tit_wrap{position: absolute; top: 352px; left: 371px;}
+.visu_tit_wrap p{color: #00224E; font-size: 36px;}
+.visu_tit_wrap p strong{font-size: 80px; font-weight: 700; color: inherit;}
+
+
+/* 컨텐츠 영역 */
+#mainContents article{position:relative;}
+.cont_tit{font-size: 40px; font-weight: 600; color: #000; text-align: center;}
+.cont_txt{font-size: 18px; color: #000; text-align: center; line-height: 130%;}
+
+
+/* 인사말 */
+.main_cont_01{position: relative; height: 440px; margin:90px 0;}
+.main_cont_01 .inner{width: 1920px;}
+.main_cont_01 .inner::after{content:""; display:block; clear:both;}
+.main_cont_01 .txt_box{margin: 0 38px 0 39px; width: 738px;}
+.main_cont_01 .txt_box .tit{font-size: 36px; font-weight: 500; color: #212121; margin-top: 40px; line-height: 55px;}
+.main_cont_01 .txt_box p{font-size: 20px; font-weight: 300; line-height: 20px; margin-top: 25px;}
+.main_cont_01 .txt_box a{position: relative; top: 40px; padding-left: 120px; font-family: 'Montserrat'; font-size: 16px; font-weight: 600;}
+.main_cont_01 .txt_box a::before{content: ''; display: block; position: absolute; left: 0; top: 10px; width: 100px; height: 1px; background-color: #212121;}
+
+
+/* 제품 */
+.main_cont_02{height: 665px; background-color: #F2F2F2; padding: 90px 0 80px;}
+.prdt_wrap{margin-top: 48px; overflow: hidden;}
+.prdt_wrap .prdt_area::after{content:""; display:block; clear:both;}
+.prdt_wrap .prdt_area .prdt_item{float: left; width: 383px; background-color: #fff;}
+.prdt_wrap .prdt_area .prdt_item .box_area .img_box{height: 290px;}
+.prdt_wrap .prdt_area .prdt_item .box_area .txt_box{font-size: 18px; text-align: center; position: relative; top: -50px;}
+.prdt_wrap .prdt_area .prdt_item .box_area .txt_box a{position: absolute; top: -5px; right: 20px; background-image: url('../images/main/btn_link.png'); background-size: 30px auto; width: 30px; height: 30px;}
+
+.prdt_wrap .swiper-button-prev{left: -50px; background: url('../images/main/icon_arrow_left.png') no-repeat 50% 50% / 20px auto;}
+.prdt_wrap .swiper-button-next{right: -50px; background: url('../images/main/icon_arrow_right.png') no-repeat 50% 50% / 20px auto;}
+
+.prdt_wrap .swiper-pagination{bottom: 0; padding: 0 12px; width: 66px; height: 35px; line-height: 35px; background-color: #C4C4C4; border-radius: 100px; font-weight: 500; color: #D8D8D8; left: 50%; margin-left: -33px;}
+.prdt_wrap .swiper-pagination .swiper-pagination-current{color: #fff;}
+.prdt_wrap .swiper-pagination .swiper-pagination-total{color: inherit;}
+
+
+/* location + contact */
+.main_cont_wrap{padding: 90px 0 120px; background: #fff url('../images/main/main_contbg_03.jpg') no-repeat center center; background-size: cover;}
+.main_cont_03::after{content:""; display:block; clear:both;}
+
+[class*="area"].col .cont_tit{text-align: left;}
+[class*="area"].col .cont_area{margin-top: 50px;}
+
+/* location */
+/* .map_area{margin-right: 124px;} */
+.map_area .map{margin: 0 auto 26px; height: 46px;}
+.map_area .map::after{content: ""; clear: both; display: block;}
+.map_area .map li{float: left; width: 50%; text-align: center;}
+.map_area .map li a{position: relative; display: inline-block; padding: 0 32px 28px; font-size: 18px; font-weight: 700; color: #909090;}
+.map_area .map li.on a{color: #212121;}
+.map_area .map li.on a::after{content: ''; display: block; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background-color: #212121;}
+
+.map_area .map_content .txt_box{margin-top: 35px;}
+.map_area .map_content .txt_box::after{content:""; display:block; clear:both;}
+.map_area .map_content .txt_box .tit{font-family: 'Montserrat'; position: relative; display: inline-block; color:#212121; font-size: 18px; font-weight: 500; padding: 10px 0 0;}
+.map_area .map_content .txt_box .tit::before{content: ''; display: block; position: absolute; top: 0; width: 100%; height: 2px; background-color: #0E1A62;}
+.map_area .map_content .txt_box .d_table_cell{width: 32%;}
+.map_area .map_content .txt_box .d_table_cell:last-child{width: 36%;}
+.map_area .map_content .txt_box .d_table_cell .tit{width: 100px; margin-bottom: 10px;}
+.map_area .map_content .txt_box .txt{color: #ACACAC; margin-left: 80px; position: relative; top: 10px; font-size: 16px; font-weight: 500; letter-spacing: 0.04em;}
+.map_area .map_content .txt_box .txt_b{color: #ACACAC; font-size: 16px; font-weight: 500; letter-spacing: 0.04em;}
+
+/* contact */
+.contact_area .cont::after{content:""; display:block; clear:both;}
+.contact_area .cont:last-child{margin-top: 60px;}
+.contact_area .cont .img_box{width: 38px; margin-right: 40px;}
+.contact_area .cont .txt_box .tit{font-family: 'Montserrat'; position: relative; color:#212121; font-size: 18px; font-weight: 500; padding: 10px 0 0; margin-bottom: 10px;}
+.contact_area .cont .txt_box .tit::before{content: ''; display: block; position: absolute; top: 0; width: 100%; height: 2px; background-color: #0E1A62;}
+.contact_area .cont .txt_box .txt{color: #ACACAC;}
+
+
+
+
+
+/* ---------------------------- 서브 영역 ---------------------------- */
+/* CEO인사말 */
+.con_area .txt_area.left{line-height: 180%; color: #565656; padding-right: 88px;}
+.sign_wrap{margin-top: 50px;}
+.sign_wrap span{font-size: 18px; line-height: 180%;}
+.sign_wrap span.company_position{margin-right: 10px;}
+.sign_wrap span + span{margin-left: 16px;}
+
+
+/* 인증서 */
+.certifi_wrap{overflow: hidden;}
+.certifi_wrap .certifi_area::after{content: ''; display: block; clear: both;}
+.certifi_wrap .certifi_area .certifi_item{float: left; width: 240px;}
+.certifi_wrap .certifi_area .certifi_item .img_box{height: 328px; border: 1px solid #d2d2d2; box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .2);}
+.certifi_wrap .certifi_area .certifi_item .img_box a img{width: 100%; height: 100%;}
+.certifi_wrap .certifi_area .certifi_item .txt_box{line-height: 25.2px; margin-top: 15px;text-align: center;}
+
+.certifi_wrap .swiper-button-prev, .certifi_wrap .swiper-button-next{position: absolute; top: 50%; margin-top: -30px; z-index: 50; width: 50px; height: 60px; box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.3); border-radius: 5px;}
+.certifi_wrap .swiper-button-prev{left: 20px; background: #6F6F6F url('../images/common/icon_arrow_left_type02.png') no-repeat 50% 50% / 11px auto;}
+.certifi_wrap .swiper-button-next{right: 20px; background: #6F6F6F url('../images/common/icon_arrow_right_type02.png') no-repeat 50% 50% / 11px auto;}
+
+.certifi_wrap .swiper-pagination{top: -55px; bottom: auto; text-align: right; font-weight: 700; color: #CFCFCF; font-size: 20px;}
+.certifi_wrap .swiper-pagination .swiper-pagination-current{font-size: 25px; color: #18497A;}
+.certifi_wrap .swiper-pagination .swiper-pagination-total{font-size: inherit; color: inherit;}
+
+
+/* 카달로그 */
+.catalog_wrap{overflow: hidden;}
+.catalog_wrap .catalog_area::after{content: ''; display: block; clear: both;}
+.catalog_wrap .catalog_area .catalog_item{float: left; width: 336px;}
+.catalog_wrap .catalog_area .catalog_item .img_box{height: 336px; background-color: #F7F7F7; text-align: center;}
+.catalog_wrap .catalog_area .catalog_item .img_box a img{width: 100%; height: 100%;}
+.catalog_wrap .catalog_area .catalog_item.preparing .img_box{position: relative;}
+.catalog_wrap .catalog_area .catalog_item.preparing .img_box::after{content: ''; display: block; position: absolute; z-index: 50; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 314px; height: 131px; background-image: url('../images/support/download/catalog_preparing.png'); background-size: 314px auto; background-color: rgba(0, 0, 0, .5);}
+.catalog_wrap .catalog_area .catalog_item.preparing .img_box a img{width: 254px; height: auto; position: relative; top: 50%; margin-top: -127px;}
+.catalog_wrap .catalog_area .catalog_item .txt_box{line-height: 23.4px; margin-top: 16px; font-size: 18px; font-weight: 500;}
+
+.catalog_wrap .swiper-pagination{position: relative; margin-top: 30px;}
+
+
+/* 공지사항_아코디언 메뉴 */
+.accordion_wrap li:first-child{border-top: 2px solid #18497A;}
+.accordion_wrap li .title{height: 110px; border-bottom: 1px solid #B7B7B7; display: table; width: 100%; vertical-align: middle; padding: 24px 0; cursor: pointer;}
+.accordion_wrap li .title::after{content:""; display:block; clear:both;}
+.accordion_wrap li .title > div{display: table-cell;}
+.accordion_wrap li .title .info{width: 14%; text-align: center;}
+.accordion_wrap li .title .info > span{display: block;}
+.accordion_wrap li .title .info .date{font-family: 'Montserrat'; color: #18497A; font-size: 25px; letter-spacing: -0.5px; margin-bottom: 6px;}
+.accordion_wrap li .title .info .year{font-size: 16px; line-height: 28.8px;}
+.accordion_wrap li .title .text{line-height: 28.6px; font-size: 22px; font-weight: 500;}
+.accordion_wrap li .cont{line-height: 27px; font-size: 18px; background-color: #F2F2F2; border-bottom: 1px solid #B7B7B7; padding: 35px 0 35px 14%; display: none;}
+
+
+/* 공지사항_페이징 */
+.page{text-align: center; margin-top: 50px; font-size: 0;}
+.page > span{display: inline-block; min-width: 35px; height: 35px; background-size: 35px auto; background-position: 50% 50%; border: 2px solid #CFCFCF; cursor: auto;}
+.page > span.page_first{background-image: url('../images/community/icon_page_first.png'); margin-right: 10px;}
+.page > span.page_prev{background-image: url('../images/community/icon_page_prev.png');}
+.page > span.page_next{background-image: url('../images/community/icon_page_next.png');}
+.page > span.page_last{background-image: url('../images/community/icon_page_last.png'); margin-left: 10px;}
+.page strong, .page > a{display: inline-block; overflow: hidden; height: 35px; margin-right: 15px; font-size: 18px; font-weight: normal; color: #B7B7B7; vertical-align: top; line-height: 31px; border: 2px solid transparent;}
+.page strong, .page > a.on{color: #18497A;}
+.page > a:first-of-type{margin-left: 32px;}
+.page > a:last-of-type{margin-right: 32px;}
+.page > a:hover, .page > a:focus{color: #18497A;}

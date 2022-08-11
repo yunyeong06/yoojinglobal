@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/******* common *******/
+#wrap{overflow:hidden;}
+.inner{position:relative; padding: 0 20px;}
+.clearfix::after{content:""; display:block; clear:both;}
+.font_b{font-weight:bold;}
+.col{float:left;}
+.d_table{display:table; width:100%;}
+.d_table_cell{display:table-cell;}
+
+
+/******* margin *******/
+[class*="mt0"] {margin-top:0px !important;}
+[class*="mt5"] {margin-top:5px !important;}
+[class*="mt10"] {margin-top:10px !important;}
+[class*="mt20"] {margin-top:20px !important;}
+[class*="mt30"] {margin-top:30px !important;}
+[class*="mt40"] {margin-top:30px !important;}
+[class*="mt50"] {margin-top:50px !important;}
+[class*="mr5"] {margin-right:5px !important;}
+[class*="mr10"] {margin-right:10px !important;}
+[class*="mr20"] {margin-right:20px !important;}
+[class*="mr30"] {margin-right:30px !important;}
+[class*="mr40"] {margin-right:40px !important;}
+[class*="mr50"] {margin-right:50px !important;}
+[class*="ml5"] {margin-left:5px !important;}
+[class*="ml10"] {margin-left:10px !important;}
+[class*="ml20"] {margin-left:20px !important;}
+[class*="ml30"] {margin-left:30px !important;}
+[class*="ml40"] {margin-left:40px !important;}
+[class*="ml50"] {margin-left:50px !important;}
+[class*="mb5"] {margin-bottom:5px !important;}
+[class*="mb10"] {margin-bottom:10px !important;}
+[class*="mb20"] {margin-bottom:20px !important;}
+[class*="mb30"] {margin-bottom:30px !important;}
+[class*="mb40"] {margin-bottom:40px !important;}
+[class*="mb50"] {margin-bottom:50px !important;}
+
+
+/* swiper-slider 공통 css */
+.swiper-button-next:after, .swiper-button-prev:after {display: none;}
+
+
+/******* 지도 공통 css *******/
+.radius_border{border: 1px solid #919191; border-radius: 5px;}     
+.custom_typecontrol{position: absolute; top: 10px; right: 10px; overflow: hidden; width: 130px; height: 30px; margin: 0; padding: 0; z-index: 1; font-size: 12px; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;}
+.custom_typecontrol span{display: block; width: 65px; height: 30px; float: left; text-align: center; line-height: 30px; cursor: pointer;}
+.custom_typecontrol .btn{background: #fff; background: linear-gradient(#fff, #e6e6e6);}
+.custom_typecontrol .btn:hover{background: #f5f5f5; background: linear-gradient(#f5f5f5, #e3e3e3);}
+.custom_typecontrol .btn:active{background: #e6e6e6; background: linear-gradient(#e6e6e6, #fff);}    
+.custom_typecontrol .selected_btn{color: #fff; background: #425470; background: linear-gradient(#425470, #5b6d8a);}
+.custom_typecontrol .selected_btn:hover{color: #fff;}   
+.custom_zoomcontrol{position: absolute; top: 50px; right: 10px; width: 36px; height: 80px; overflow: hidden; z-index: 1; background-color: #f5f5f5;} 
+.custom_zoomcontrol span{display: block; width: 36px; height: 40px; text-align: center; cursor: pointer;}     
+.custom_zoomcontrol span img{width: 15px; height: 15px; padding: 12px 0; border: none;}             
+.custom_zoomcontrol span:first-child{border-bottom: 1px solid #bfbfbf;}
+
+
+/******* header *******/
+#header{height: 60px; position: fixed; left: 0; right: 0; top: 0; background-color: #fff; z-index: 9000; box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25); transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
+
+/* logo */
+.header_logo{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 8000; text-align: center;}
+.header_logo a{display: block;}
+.header_logo a img{height: 21px;}
+
+/* 메뉴 고정 버튼 */
+.menu_btn{position: absolute; top: 50%; right: 12px; transform: translateY(-50%); font-size: 0; z-index: 8000;}
+.menu_btn button{width: 42px; height: 42px; background: url('../images/common/icon_allmenu_close.png') no-repeat 0 0 / 42px auto;}
+.menu_btn.open button{background: url('../images/common/icon_allmenu_open.png') no-repeat 0 0 / 42px auto;}
+
+/* gnb_wrap */
+.gnb_wrap{display: none; position: absolute; left: 0; top: 60px; width: 100%; z-index: 9999; padding: 10px 0 20px; border-top: 2px solid #E5E5E5; background: #fff; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
+.gnb_wrap.on{display: block;}
+.gnb_wrap > li{padding: 0 20px;}
+.gnb_wrap > li > a{display: block; position: relative; font-weight: 700; padding: 20px 10px; border-bottom: 1px solid #ddd;}
+.gnb_wrap > li > a::after{content: ''; position: absolute; top: 23.5px; right: 10px; width: 9px; height: 9px; background: url('../images/common/icon_gnb_plus.png') center center no-repeat;}
+.gnb_wrap > li:first-child > a::after{display: none;}
+.gnb_wrap > li > a.open::after{background: url('../images/common/icon_gnb_minus.png') center center no-repeat;}
+
+/* sub_wrap */
+.sub_wrap{display: none; background: #fff; padding: 9px 0 20px; border-bottom: 1px solid #ddd;}
+.gnb_wrap > li:last-child .sub_wrap{border-bottom: 0;}
+.sub_wrap li{padding: 10px 0;}
+.sub_wrap li a{display: block; position: relative; padding: 0 30px; margin-bottom: 4px; font-weight: 700; letter-spacing: -0.08em;}
+.sub_wrap li:last-child a{margin-bottom: 0;}
+    
+.gnb_bg{position: fixed; width: 100%; height: 100%; top: 0; bottom: 0; left: 0; z-index: -1; transition: .5s ease-in-out;}
+.gnb_bg.open{background: linear-gradient(0deg, rgba(35, 35, 36, 0.3), rgba(35, 35, 36, 0.3)); z-index: 8000;}
+
+
+
+/******* footer *******/
+#footer{position: relative; background: #2E2E2E; height: 415px; text-align: center;}
+.footer_inner{padding: 100px 0;}
+.footer_inner::after{content:""; display:block; clear:both;}
+.f_logo{margin-bottom: 40px;}
+.f_logo img{width: 114px;}
+.add{color: #E0E0E0; line-height: 22px; font-size: 14px; letter-spacing: -0.05em;}
+.add:last-child{font-family: 'Montserrat'; font-weight: 500; margin-top: 26px; letter-spacing: -0.03em;}
+.add span{color: inherit; font-size: inherit; font-family: inherit;}
+.add i{margin: 0 5px; color: #E0E0E0;}
+
+
+/******* top 버튼 *******/
+/* .quick_btn{position: fixed; bottom: 20px; right:40px; z-index: 9999; display: none;}
+.quick_btn a{display: block; width:80px; height:81px; text-align: center; background: url('../images/common/icon_top.png') no-repeat 0 0 / 58px auto;} */
+
+
+
+/******* 서브영역 공통 *******/
+.sub_visual_box{width: 100%; min-width: 360px; height: 200px; position: relative; background-position: center center; background-repeat: no-repeat; background-size: cover;}
+.visual01{background-image: url('../images/common/sub_visual_01.jpg');}
+.visual02{background-image: url('../images/common/sub_visual_02.jpg');}
+.visual03{background-image: url('../images/common/sub_visual_03.jpg');}
+.visual04{background-image: url('../images/common/sub_visual_04.jpg');}
+.visual_txt_box{position: relative; top: 59px;}
+.visual_txt_box .visual_tit{font-size: 24px; font-weight: 500; color: #fff; text-align: center; margin-bottom: 30px;}
+.visual_txt_box .visual_txt{font-size: 14px; font-weight: 700; color: #fff; text-align: center;}
+
+.subtop_wrap{background-color: #fff; height: 49px; border-bottom: 1px solid #CFCFCF; text-align: center;}
+.subtop_wrap .subtop_area{position: relative;}
+.subtop_wrap .subtop_area::after{content: ''; display: block; position: absolute; top: 22px; right: 20px; width: 0px; height: 0px; border-top: 5px solid #2F2F2F; border-bottom: 5px solid transparent; border-right: 5px solid transparent; border-left: 5px solid transparent;}
+.subtop_wrap .subtop_area > li{position: relative; line-height: 49px;}
+.subtop_wrap .subtop_area > li > a{font-weight: 500; font-size: 15px; color: #2f2f2f;}
+.subtop_wrap .subtop_area > li > ul{display: none; background-color: #fff; position: relative; z-index: 50;}
+.subtop_wrap .subtop_area > li.active > ul{display: block;}
+.subtop_wrap .subtop_area > li > ul > li{height: 40px;}
+.subtop_wrap .subtop_area > li > ul > li > a{display: block; line-height: 40px; font-size: 15px; font-weight: 500; color: #777;}
+.subtop_wrap .subtop_area > li > ul > li.active > a{color: #2F2F2F;}
+
+.subContents{padding: 40px 0 80px;}
+.con_area + .con_area {margin-top: 60px;}
+.con_box{text-align: center;}
+.con_box + .con_box {margin-top: 60px;}
+.con_box img{width: 100%;}
+
+.con_tit{position: relative; left: -20px; font-weight: 700; font-size: 20px; margin-bottom: 30px; padding-left: 25px}
+.con_tit.txt_eng{font-family: 'Montserrat'; font-weight: 600;}
+.con_tit::before{content: ''; display: block; position: absolute; top: 10px; left: 0;; width: 20px; height: 2px; background-color: #212121;}
+.con_sub_tit{font-size: 18px; color: #18497A; font-weight: 700; margin-bottom: 20px;}
+.con_box .con_sub_tit{text-align: left;}
+.con_tit_02{font-weight: 700; font-size: 20px; margin-bottom: 30px;}
+.con_box .con_tit_02{text-align: left;}
+
+.tab_btn_area{margin-bottom: 30px; font-size: 0;}
+.tab_btn_area span{font-size: 15px;}
+.tab_btn_area .tab_link{margin-right: 7px; background-color: #fff; border: 1px solid #B7B7B7; border-radius: 91px; display: inline-block;}
+.tab_btn_area .tab_link:last-child{margin-right: 0;}
+.tab_btn_area .tab_link.on{background-color: #18497A; border: 1px solid #18497A;}
+.tab_btn_area .tab_link a{color: #B7B7B7; display: block; height: 35px; line-height: 35px; padding: 0 7px;}
+.tab_btn_area .tab_link.on a{color: #fff;}
+
+.tab_cont_area{display: none;}
+.tab_cont_area.on{display: block;}
+/******* //서브영역 공통 *******/
