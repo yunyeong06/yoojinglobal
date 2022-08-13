@@ -1,4 +1,14 @@
 $(document).ready(function(){
+	// top 버튼
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 900){
+			$("#topBtn").fadeIn();
+		}else{
+			$("#topBtn").fadeOut();
+		}
+	});
+
+
 	// 제품
 	var prdtSwiper = new Swiper(".fraction", {
         slidesPerView: "3",
@@ -13,15 +23,5 @@ $(document).ready(function(){
           	nextEl: ".swiper-button-next",
           	prevEl: ".swiper-button-prev"
         },
-	});
-
-	
-	// top 버튼
-	$(window).scroll(function(){
-		if($(this).scrollTop() > 900){
-			$('#topBtn').fadeIn();
-		}else{
-			$('#topBtn').fadeOut();
-		}
 	});
 });
