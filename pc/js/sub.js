@@ -2,30 +2,30 @@ $(document).ready(function(){
 	// top 버튼
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 0){
-			$('#topBtn').fadeIn();
+			$("#topBtn").fadeIn();
 		}else{
-			$('#topBtn').fadeOut();
+			$("#topBtn").fadeOut();
 		}
 	});
 
 
 	// 제품페이지 탭메뉴
-	$('.tab_btn_area .tab_link').click(function(){
-		var tab_id = $(this).attr('data-tab');
+	$(".tab_btn_area .tab_link").click(function(){
+		var tab_id = $(this).attr("data-tab");
 
-		$('.tab_btn_area .tab_link').removeClass('on');
-		$('.tab_cont_area').removeClass('on');
+		$(".tab_btn_area .tab_link").removeClass("on");
+		$(".tab_cont_area").removeClass("on");
 
-		$(this).addClass('on');
-		$("#"+tab_id).addClass('on');
+		$(this).addClass("on");
+		$("#"+tab_id).addClass("on");
 	});
 
 	
 	// 공지사항 아코디언 메뉴
-	$('.accordion_wrap li .title').click(function(){
-		$('.accordion_wrap li .cont').slideUp();
+	$(".accordion_wrap li .title").click(function(){
+		$(".accordion_wrap li .cont").slideUp();
 		
-		if($(this).next().is(':hidden')){
+		if($(this).next().is(":hidden")){
 			$(this).next().slideDown();
 		}else{
 			$(this).next().slideUp();
@@ -48,6 +48,7 @@ $(document).ready(function(){
         },
 	});
 
+	
 	// 카달로그
 	var progressSwiper = new Swiper(".progress", {
 		slidesPerView: "3",
